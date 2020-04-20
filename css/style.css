@@ -39,16 +39,24 @@ tr:nth-child(odd){
   text-shadow: 2px 2px 2px black;
 }
 
+.header h3 {
+  font-size: 25px;
+  text-shadow: 2px 2px 2px black;
+}
+
 .header p {
   font-size: 20px;
   text-shadow: 2px 2px 2px black;
 }
 
 /* Background image */
-.bgimg1 {
-  background-position: center;
-  background-size: cover;
-  background-color: yellow;
+.bgtribun {
+  background-image: linear-gradient(rgba(255, 255, 0, 0.5),rgba(0, 0, 255, 0.5));
+}
+
+.bgtribun a {
+  color: rgb(4, 158, 81);
+  font-style: italic;
 }
 
 .mySlides {
@@ -141,6 +149,7 @@ li {
   width: 25%;
   background-color: #f1f1f1;
   padding-left: 20px;
+  text-align: center;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -183,6 +192,78 @@ li {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,1);
 }
 
+.center {
+  text-align: center;
+}
+
+.profiled {
+  text-align: center;
+  border-radius: 50px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.flex-container > div {
+  width: 100px;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
 
 /* Footer */
 .footer {
